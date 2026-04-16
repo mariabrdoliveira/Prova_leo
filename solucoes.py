@@ -8,8 +8,17 @@ def sao_anagramas(string1, string2):
     
 
 def cifra_de_cesar(texto, deslocamento):
-    # TODO: Implemente a logica
-    pass
+    resultado = ""
+    
+    for c in texto:
+        if 'a' <= c <= 'z':
+            resultado += chr((ord(c) - ord('a') + deslocamento) % 26 + ord('a'))
+        elif 'A' <= c <= 'Z':
+            resultado += chr((ord(c) - ord('A') + deslocamento) % 26 + ord('A'))
+        else:
+            resultado += c  # Mantem espaços, numeros e pontuacao
+    
+    return resultado
     
 
 def valida_cpf(cpf_string):
