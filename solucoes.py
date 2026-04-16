@@ -1,6 +1,10 @@
 def sao_anagramas(string1, string2):
-    # TODO: Implemente a logica
-    pass
+    # Converter para minúsculas e remover espaços
+    primeiro_texto = string1.lower().replace(" ", "")
+    segundo_texto = string2.lower().replace(" ", "")
+    
+    # Comparar as letras ordenadas
+    return sorted(primeiro_texto) == sorted(segundo_texto)
     
 
 def cifra_de_cesar(texto, deslocamento):
