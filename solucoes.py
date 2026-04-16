@@ -10,6 +10,7 @@ def sao_anagramas(string1, string2):
     
 
 def cifra_de_cesar(texto, deslocamento):
+#é um método de criptografia, baseado na substituição de letras, onde cada caractere do texto original é trocado por outra letra que se encontra um número fixo de posições adiante ou atrás no alfabeto
     resultado = ""
     for c in texto:
         if 'a' <= c <= 'z':
